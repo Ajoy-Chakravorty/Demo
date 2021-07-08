@@ -1,0 +1,177 @@
+//Customization Bootstrap
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+
+//import bootstrap from modules
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//all clustom code
+
+// -------Global-------
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// ---x---Global---x---
+
+// -------NavBar-------
+body{
+    background-color: #F6f6f6;
+    max-width:100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.li-bar{
+    width:1px;
+    background-color: #c5c4c4;
+    height:1rem;
+    
+}
+.nav-item{
+    cursor: pointer;
+}
+.nav-icon{
+    font-size:1.3rem;
+    color:rgba(0,0,0, 0.55);
+}
+.custom-dropdown{
+    position:relative;
+}
+.custom-dropdown:hover ul{
+    display:block;
+   min-width: 100px;
+   position:absolute;
+   z-index: 100;
+   background:#fff;
+   box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+   padding:1rem;
+   border-radius:0.15rem;
+   margin-top:0.5rem;
+}
+.custom-dropdown ul{
+    display: none;
+}
+
+// ---x---NavBar---x---
+
+
+// -------Carousel-------
+#main-carousel .carousel-inner{
+        height: 500px;
+        width: 100%;
+}
+.carousel-control-prev{
+    left: -7.8rem;
+}
+.carousel-control-next{
+    right: -7.8rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    filter: invert(100%);
+}
+.carousel-item{
+    height:100%;
+    background-color: #f6f6f6;
+}
+.carousel-content{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.carousel-content div{
+    flex:1;
+}
+.carousel-text h1{
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 400 !important;
+}
+.btn-cta{
+    padding: 0.8rem 3rem;
+    border-radius: 0;
+    border:none;
+    outline: none;
+    border:1px solid #000;
+    margin-top:2rem;
+}
+.carousel-img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+// ---x---Carousel---x---
+
+
+// -------Featured Card-------
+.single-banner{
+    border:4px solid #fff;
+    position:relative;
+    overflow: hidden;
+    margin: 6rem 0;
+    img{
+        width:100%;
+        transition:all 0.5s ease 0s;
+        transform: scale(1);
+    }
+    .banner-content{
+        position:absolute;
+        top:46px;
+        left:36px;
+        content: "";
+        h3{
+            font-family: 'Cormorant Garamond', serif;
+            margin:0;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 30px;
+            color:#617D05;
+        }
+        h4{
+            margin:3px 0 58px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            color:#010101;
+            span{
+                margin-left: 2px;
+                font-size: 20px;
+                line-height: 1;
+                color:#617D05;
+                position:relative;
+                top:2px;
+                display:inline-block;
+            }
+
+            
+        }
+        a{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            font-size: 16px;
+            text-align: center;
+            border:2px solid #617D05;
+            border-radius: 100%;
+            color: #617D05;
+            i{
+                line-height: 32px;
+            }
+        }
+    }
+    &:hover a img{
+        transform: scale(1.2);
+    }
+}
+
+// ---x---Faetured Card---x---
