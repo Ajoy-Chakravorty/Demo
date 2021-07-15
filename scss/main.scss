@@ -4,12 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
-$font-family-sans-serif: 'Poppins',
-sans-serif;
+$font-family-sans-serif: 'Poppins',sans-serif;
 
 
 //import bootstrap from modules
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// font awesome scss
+
+    @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+    @import "../node_modules/@fortawesome/fontawesome-free/scss/regular";
+    @import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+    @import "../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
+    
 
 //all clustom code
 
